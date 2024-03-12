@@ -37,13 +37,21 @@ you've just cloned!!
 ## Features
 
 ✅ Basic Scan
+
 ✅ Ip Grabbing
+
 ✅ CSRF Token Grabbing 
+
 ❌ XSS Scan
+
 ✅ Cokkie Grabbing
+
 ✅ Scan Port
+
 ✅ IP resolver checker
+
 ✅ DNS Lookup
+
 ✅ WordPress Scan
 
 ## Special Thanks to
