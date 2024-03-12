@@ -1,5 +1,61 @@
-# Scanner
-This tools for scanning website
 
-Install :
-git clone https://github.com/Azarela-Vnk/Scanner
+<p align="center">
+<a href="https://github.com/Azarela-Vnk/followers"><img title="Followers" src="https://img.shields.io/github/followers/Scanner?color=blue&style=flat-square"></a>
+<a href="https://github.com/Azarela-Vnk/Scanner/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Azarela-Vnk/Scanner?color=red&style=flat-square"></a>
+<a href="https://github.com/Azarela-Vnk/megumin-bot/network/members"><img title="Forks" src="http://img.shields.io/github/forks/Azarela-Vnk/Scanner?color=red&style=flat-square"></a>
+<a href="https://github.com/Azarela-Vnk/Scanner/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Azarela-Vnk/Scanner?label=Watchers&color=blue&style=flat-square"></a>
+<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"</a>
+</p>
+
+</p>
+<h2 align="center">-> SPOTIFY <-</h2>
+<p align="center">
+  <a href="https://open.spotify.com/track/5rRAOgZOAqHwUMwVAXkUYU?si=66_j1Qi3SWWI4yJLNQVQcQ" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify" alt="Spotify Now Playing" width="350"/></a>
+</p>
+
+## Clone this project
+
+```bash
+> git clone https://github.com/Azarela-Vnk/Scanner
+```
+
+## Install the dependencies:
+Before running the below command, make sure you're in the project directory that
+you've just cloned!!
+
+```bash
+> cd Scanner
+> pip install -r requirements.txt
+```
+
+### Usage
+```py
+> python3 start.py
+```
+
+### Setting
+Change admin and all in folder
+
+[`HERE`](https://github.com/Azarela-Vnk/megumin-bot/blob/main/admin/set.json)
+
+
+## Features
+
+|                  Feature             |
+| :-----------: | :--------------------------------: |
+|       ✅       | Basic Scan          |
+|       ✅       | Ip Grabbing         |
+|       ✅       | CSRF Token Grabbing |
+|       ❌       | XSS Scan            |
+|       ✅       | Cokkie Grabbing     |
+|       ✅       | Scan Port           |
+|       ✅       | IP resolver checker |
+|       ✅       | DNS Lookup          |
+|       ✅       | WordPress Scan      |
+
+## Special Thanks to
+* [`Mhankbarbar`](https://github.com/MhankBarBar)
+
+### Donate
+* [`Dana : +6285691724140`]
+* [`Pulsa : +6285691724140`]
