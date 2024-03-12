@@ -36,21 +36,17 @@ you've just cloned!!
 
 ## Features
 
-|                  Feature             |
-| :-----------: | :--------------------------------: |
-|       ✅       | Basic Scan          |
-|       ✅       | Ip Grabbing         |
-|       ✅       | CSRF Token Grabbing |
-|       ❌       | XSS Scan            |
-|       ✅       | Cokkie Grabbing     |
-|       ✅       | Scan Port           |
-|       ✅       | IP resolver checker |
-|       ✅       | DNS Lookup          |
-|       ✅       | WordPress Scan      |
+✅ Basic Scan
+✅ Ip Grabbing
+✅ CSRF Token Grabbing 
+❌ XSS Scan
+✅ Cokkie Grabbing
+✅ Scan Port
+✅ IP resolver checker
+✅ DNS Lookup
+✅ WordPress Scan
 
 ## Special Thanks to
 * [`Tuhinshubhra`](https://github.com/Tuhinshubhra)
 
 ### Donate
-* [`Dana : +6285691724140`]
-* [`Pulsa : +6285691724140`]
