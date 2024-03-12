@@ -162,7 +162,7 @@ def main():
     while True:
         print(colored("""
         ╭──────────༺♡༻──────────╮
-           Made By ./Clèmantiné
+           Made By ./Azarela
         ╰──────────༺♡༻──────────╯
         """, 'green'))
         print(colored(' Input   Deskripsi', 'yellow'))
