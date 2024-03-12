@@ -29,14 +29,9 @@ you've just cloned!!
 ```
 
 ### Usage
-```py
+```bash
 > python3 start.py
 ```
-
-### Setting
-Change admin and all in folder
-
-[`HERE`](https://github.com/Azarela-Vnk/megumin-bot/blob/main/admin/set.json)
 
 
 ## Features
@@ -54,7 +49,7 @@ Change admin and all in folder
 |       ✅       | WordPress Scan      |
 
 ## Special Thanks to
-* [`Mhankbarbar`](https://github.com/MhankBarBar)
+* [`Tuhinshubhra`](https://github.com/Tuhinshubhra)
 
 ### Donate
 * [`Dana : +6285691724140`]
