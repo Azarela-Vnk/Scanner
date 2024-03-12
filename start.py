@@ -8,7 +8,7 @@ def main():
     while True:
         print('\n')
         print(colored("""
-        ᴍᴀᴅᴇ ʙʏ ./𝐶𝑙𝑒̀𝑚𝑎𝑛𝑡𝑖𝑛𝑒́。        •         ﾟ。
+        Made By ./Azarela。        •         ﾟ。
         .    .             .                。    。.
     .         。     ඞ 。     . •
 • 𝐼 ℎ𝑜𝑝𝑒 𝑦𝑜𝑢 𝑎𝑟𝑒 𝑛𝑜𝑡 𝑎𝑛 𝑖𝑚𝑝𝑜𝑠𝑡𝑒𝑟 •.
