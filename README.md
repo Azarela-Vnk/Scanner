@@ -13,6 +13,11 @@
   <a href="https://open.spotify.com/track/5rRAOgZOAqHwUMwVAXkUYU?si=66_j1Qi3SWWI4yJLNQVQcQ" target="_blank"><img src="https://now-playing-on-spotify.vercel.app/api/spotify" alt="Spotify Now Playing" width="350"/></a>
 </p>
 
+## New Update
+1.Fixed cokkie grabbing
+2.Deleted features XSS Scan (Comming Soon)
+3.Fixed IP Grabbing
+
 ## Clone this project
 
 ```bash
