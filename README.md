@@ -14,9 +14,11 @@
 </p>
 
 ## New Update
-1.Fixed cokkie grabbing
-2.Deleted features XSS Scan (Comming Soon)
-3.Fixed IP Grabbing
+1.Fixed cokkie grabbing 
+
+2.Deleted features XSS Scan (Comming Soon) 
+
+3.Fixed IP Grabbing 
 
 ## Clone this project
 
@@ -47,8 +49,6 @@ you've just cloned!!
 
 ✅ CSRF Token Grabbing 
 
-❌ XSS Scan
-
 ✅ Cokkie Grabbing
 
 ✅ Scan Port
@@ -61,5 +61,3 @@ you've just cloned!!
 
 ## Special Thanks to
 * [`Tuhinshubhra`](https://github.com/Tuhinshubhra)
-
-### Donate
