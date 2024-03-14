@@ -14,11 +14,13 @@
 </p>
 
 ## New Update
-1.Fixed cokkie grabbing 
+[2024/14/Maret]Fixed cokkie grabbing 
 
-2.Deleted features XSS Scan (Comming Soon) 
+[2024/14/Maret]Deleted features XSS Scan (Comming Soon) 
 
-3.Fixed IP Grabbing 
+[2024/14/Maret]Fixed IP Grabbing 
+
+[2024/14/Maret]Add CMS Detection Joomla, Drupal, PrestaShop
 
 ## Clone this project
 
