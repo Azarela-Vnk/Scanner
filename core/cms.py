@@ -305,7 +305,7 @@ def detect_cms(target_url):
                             d.write(target_url + '/\n')
                     else:
                         print('--| ' + target_url + ' --> [Other]')
-                        with open('resultother.txt', mode='a') as d:
+                        with open('result/other.txt', mode='a') as d:
                             d.write(target_url + '/\n')
             else:
                 print('--| ' + target_url + ' --> [Other]')
