@@ -1,10 +1,10 @@
 
 <p align="center">
-<a href="https://github.com/Azarela-Vnk/followers"><img title="Followers" src="https://img.shields.io/github/followers/Scanner?color=blue&style=flat-square"></a>
+<a href="https://github.com/Azarela-Vnk/followers"><img title="Followers" src="https://img.shields.io/github/followers/Azarela-Vnk?color=blue&style=flat-square"></a>
 <a href="https://github.com/Azarela-Vnk/Scanner/stargazers/"><img title="Stars" src="https://img.shields.io/github/stars/Azarela-Vnk/Scanner?color=red&style=flat-square"></a>
 <a href="https://github.com/Azarela-Vnk/megumin-bot/network/members"><img title="Forks" src="http://img.shields.io/github/forks/Azarela-Vnk/Scanner?color=red&style=flat-square"></a>
 <a href="https://github.com/Azarela-Vnk/Scanner/watchers"><img title="Watching" src="https://img.shields.io/github/watchers/Azarela-Vnk/Scanner?label=Watchers&color=blue&style=flat-square"></a>
-<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-YES-blue.svg"</a>
+<a href="#"><img title="MAINTENED" src="https://img.shields.io/badge/MAINTENED-NO-blue.svg"</a>
 </p>
 
 </p>
