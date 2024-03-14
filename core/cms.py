@@ -268,28 +268,28 @@ def detect_cms(target_url):
                 generator = generator_match.group(1)
                 if 'WordPress' in generator:
                     print('--| ' + target_url + ' --> [WordPress]')
-                    with open('wordpress.txt', mode='a') as d:
+                    with open('result/wordpress.txt', mode='a') as d:
                         d.write(target_url + '/\n')
                 elif 'Joomla' in generator:
                     print('--| ' + target_url + ' --> [Joomla]')
-                    with open('joomla.txt', mode='a') as d:
+                    with open('result/joomla.txt', mode='a') as d:
                         d.write(target_url + '/\n')
                 elif 'Drupal' in generator:
                     print('--| ' + target_url + ' --> [Drupal]')
-                    with open('drupal.txt', mode='a') as d:
+                    with open('result/drupal.txt', mode='a') as d:
                         d.write(target_url + '/\n')
                 elif 'PrestaShop' in generator:
                     print('--| ' + target_url + ' --> [PrestaShop]')
-                    with open('prestashop.txt', mode='a') as d:
+                    with open('result/prestashop.txt', mode='a') as d:
                         d.write(target_url + '/\n')
                 else:
                     if 'wp-content/themes' in src:
                         print('--| ' + target_url + ' --> [WordPress]')
-                        with open('wordpress.txt', mode='a') as d:
+                        with open('result/wordpress.txt', mode='a') as d:
                             d.write(target_url + '/\n')
                     elif 'catalog/view/theme' in src:
                         print('--| ' + target_url + ' --> [OpenCart]')
-                        with open('opencart.txt', mode='a') as d:
+                        with open('result/opencart.txt', mode='a') as d:
                             d.write(target_url + '/\n')
                     elif 'sites/all/themes' in src:
                         print('--| ' + target_url + ' --> [Drupal]')
@@ -297,19 +297,19 @@ def detect_cms(target_url):
                             d.write(target_url + '/\n')
                     elif '<script type="text/javascript" src="/media/system/js/mootools.js"></script>' in src or '/media/system/js/' in src or 'com_content' in src:
                         print('--| ' + target_url + ' --> [Joomla]')
-                        with open('joomla.txt', mode='a') as d:
+                        with open('result/joomla.txt', mode='a') as d:
                             d.write(target_url + '/\n')
                     elif 'js/jquery/plugins/' in src:
                         print('--| ' + target_url + ' --> [PrestaShop]')
-                        with open('prestashop.txt', mode='a') as d:
+                        with open('resultprestashop.txt', mode='a') as d:
                             d.write(target_url + '/\n')
                     else:
                         print('--| ' + target_url + ' --> [Other]')
-                        with open('other.txt', mode='a') as d:
+                        with open('resultother.txt', mode='a') as d:
                             d.write(target_url + '/\n')
             else:
                 print('--| ' + target_url + ' --> [Other]')
-                with open('other.txt', mode='a') as d:
+                with open('result/other.txt', mode='a') as d:
                     d.write(target_url + '/\n')
         else:
             print('--| ' + target_url + ' --> [Failed to fetch URL]')
