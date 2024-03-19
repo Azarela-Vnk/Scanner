@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import requests
 from urllib.parse import urlparse
 import os
@@ -6,11 +7,11 @@ import urllib.request
 import time
 import concurrent.futures
 from typing import List
-import dns
-from dns import resolver
-import dns.resolver
-import dns.reversename
 from termcolor import colored
+
+def clear_screen(pepek):
+    os.system('cls' if os.name == 'linux' else 'clear')
+    return None
 
 def parse_ports(port_arg):
     if port_arg.lower() == 'all':
@@ -40,9 +41,7 @@ def scan_port(ip, port):
         return port, f"error: {e}"
 
 def get_service(port):
-    return "unknown"
-
-COMMON_SERVICES = {
+    COMMON_SERVICES = {
     20: "FTP Data",
     21: "FTP Control",
     22: "SSH",
@@ -52,13 +51,15 @@ COMMON_SERVICES = {
     443: "HTTPS", 
     # ini isi port port buat scan tertentunya
 }
-
+    for service, number in COMMON_SERVICES.items():
+        if port == number:
+            return service
 
 def scan_ports(target_host, ports):
     open_ports = []
     try:
         ip = socket.gethostbyname(target_host)
-        print(f"Starting scan for {target_host} ({ip})")
+        print(f"\nStarting scan for {target_host} ({ip})")
 
         start_time = time.time()
 
@@ -71,11 +72,11 @@ def scan_ports(target_host, ports):
                     open_ports.append(port)
 
         end_time = time.time()
-
+        
         print("PORT    STATE    SERVICE")
         for port in open_ports:
             service = get_service(port) 
-            print(f"{port}/tcp  open     {service}")
+            print(f"{port}     open     {service}")
 
         total_time = end_time - start_time
         print(f"Scan completed in {total_time:.2f} seconds")
@@ -124,7 +125,7 @@ def all_port(target: str, ports: List[int]):
             sock = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
             sock.settimeout(0.2)
             sock.connect((target, port))
-            print(f"Port {port} is open")
+            print(f"\n[+] Port {port} is open")
             sock.close()
         except socket.error:
             pass
@@ -185,45 +186,62 @@ def scan_site(ipsl):
         dnslookups = resultdlup.split("\n")
         for dnslkup in dnslookups:
             print("[DNS Lookup] " + dnslkup)
-        print("\n[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n")
         input()
     else:
         print("Error: Unable to fetch DNS lookup data.")
+ 
+import sys
+
+def print_menu():
+    print("""
+    \033[92m 
+___   ___ ___________
+|  | |  | |  |      |
+|  | |  | |  |   ---|
+|  |_|  |_| '|---   |
+|____________|______|
+
+\033[97m[\033[92m ADVANCE Web Scanner \033[97m] Made By \033[92m ./Clèmantiné\033[97m
+[ \033[92mhttps://github.com/Azarela-Vnk \033[97m]
+    """)
+
+    print(colored(' Input   Deskripsi', 'yellow'))
+    print(colored('=======  ==============================', 'green'))
+    print(colored('  [1]    Scan Port Tertentu', 'white'))
+    print(colored('  [2]    Scan Semua Port (Tidak di rekomendasikan)', 'white'))
+    print(colored('  [3]    IP resolver checker', 'white'))
+    print(colored('  [4]    DNS lookup', 'white'))
+    print(colored('  [5]    Kembali ke menu utama', 'white'))
 
 def main():
     while True:
-        print('\n')
-        print(colored("""
-        Made by ./Azarela。        •         ﾟ。
-        .    .             .                。    。.
-    .         。     ඞ 。     . •
-• 𝐼 ℎ𝑜𝑝𝑒 𝑦𝑜𝑢 𝑎𝑟𝑒 𝑛𝑜𝑡 𝑎𝑛 𝑖𝑚𝑝𝑜𝑠𝑡𝑒𝑟 •.
-        """, 'green'))
-        print(colored(' Input   Deskripsi', 'yellow'))
-        print(colored('=======  ==============================', 'green'))
-        print(colored('  [1]    Scan Port Tertentu', 'white'))
-        print(colored('  [2]    Scan Semua Port', 'white'))
-        print(colored('  [3]    IP resolver checker', 'white'))
-        print(colored('  [4]    DNS lookup', 'white'))
-        print(colored('  [5]    Kembali ke menu utama', 'white'))
-        
         try:
+            print_menu()
             choice = input("\nPilih menu : ")
         except Exception as e:
             print(f"An unexpected error occurred: {e}")
             continue
+
         if choice == "1":
             scan_port_menu()
+            pepek = input(colored("\n[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n", 'yellow'))
+            clear_screen(pepek)
         elif choice == "2":
             target = input("Masukkan alamat IP atau nama Host target: ")
             ports = list(range(1, 65536))
             all_port(target, ports)
+            pepek = input(colored("\n[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n", 'yellow'))
+            clear_screen(pepek)
         elif choice == "3":
             url = input("Masukan URL: ")
             IP_resolver_checker(url)
+            pepek = input(colored("\n[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n", 'yellow'))
+            clear_screen(pepek)
         elif choice == "4":
             ipsl = input("Masukkan URL: ") 
             scan_site(ipsl)
+            pepek = input(colored("\n[*] Scanning Complete. Press Enter To Continue OR CTRL + C To Stop\n", 'yellow'))
+            clear_screen(pepek)
         elif choice == "5":
             break
         else:
